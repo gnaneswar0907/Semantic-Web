@@ -1,0 +1,33 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/">
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:resource="#me"/>
+  <foaf:primaryTopic rdf:resource="#me"/>
+  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me">
+<foaf:name>Gnaneswar Gandu</foaf:name>
+<foaf:title>Mr</foaf:title>
+<foaf:givenname>Gnaneswar</foaf:givenname>
+<foaf:family_name>Gandu</foaf:family_name>
+<foaf:nick>Ashish</foaf:nick>
+<foaf:mbox rdf:resource="mailto:gxg170000@utdallas.edu"/>
+<foaf:homepage rdf:resource="www.utdallas.edu/~gxg170000"/>
+<foaf:depiction rdf:resource="gnaneswar.jpg"/>
+<foaf:phone rdf:resource="tel:4699875647"/>
+<foaf:workplaceHomepage rdf:resource="www.utdallas.edu"/>
+<foaf:workInfoHomepage rdf:resource="www.utdallas.edu/~gxg170000"/>
+<foaf:schoolHomepage rdf:resource="www.utdallas.edu"/>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>akhil</foaf:name>
+<foaf:mbox rdf:resource="mailto:asish.gnan2@gmail.com"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>giri</foaf:name>
+<foaf:mbox rdf:resource="mailto:gxg170000@utdallas.edu"/></foaf:Person></foaf:knows></foaf:Person>
+</rdf:RDF>
