@@ -29,7 +29,7 @@ public class Lab2p2 {
 
         dataset.begin(ReadWrite.WRITE);
 
-        String graphURI = "http://utdallas.edu/semclass/lab2";
+        String graphURI = "http://utdallas.edu/semclass/lab2p2";
         Model model = dataset.getNamedModel(graphURI);
 
         Resource book = model.createResource(bookURI);
