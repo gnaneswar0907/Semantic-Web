@@ -1,0 +1,91 @@
+#Query1:
+
+prefix em: <http://www.w3.org/2001/vcard-rdf/3.0#>
+select ?s where {
+   ?s em:FN "Jane Smith" .
+}
+
+Query Result:  Found 1 solutions in 0.108 seconds.
+
+?s
+
+Jane Smith
+
+-----------------------------------------------------------------------
+
+#Query2:
+
+prefix em: <http://www.w3.org/2001/vcard-rdf/3.0#>
+select ?o where {
+  ?s em:FN ?o .
+}
+
+Query Result:  Found 4 solutions in 0.107 seconds.
+
+?o
+
+Sarah Parker
+Bobby Smith
+Jane Smith
+Matt Parker
+
+-----------------------------------------------------------------------
+
+#Query3:
+
+prefix em: <http://www.w3.org/2001/vcard-rdf/3.0#>
+prefix em1: <http://somewhere/peopleInfo#>
+select ?s ?o ?p where {
+   ?s em:FN ?o .
+   ?s em1:age ?p .
+}
+
+Query Result:  Found 3 solutions in 0.118 seconds.
+
+?s             ?o             ?p
+
+Sarah Parker   Sarah Parker   25
+Robert Smith   Bobby Smith    27
+Matt Parker    Matt Parker    23
+
+
+-----------------------------------------------------------------------
+
+#Query4:
+
+prefix em: <http://www.w3.org/2001/vcard-rdf/3.0#>
+prefix em1: <http://somewhere/peopleInfo#>
+select ?s ?o ?p where {
+   ?s em:FN ?o .
+   ?s em1:age ?p .
+   filter (?p >= "25")
+}
+
+Query Result:  Found 2 solutions in 0.107 seconds.
+
+?s             ?o             ?p
+
+Sarah Parker   Sarah Parker   25
+Robert Smith   Bobby Smith    27
+
+-----------------------------------------------------------------------
+
+#Query5:
+
+prefix name: <http://www.w3.org/2001/vcard-rdf/3.0#>
+prefix em: <http://somewhere/peopleInfo#>
+select ?s ?p where {
+   ?s em:age ?o1 ;
+      name:FN ?o ;
+      name:N ?o2 .
+   ?o2 name:Given ?p .
+}
+
+Query Result:  Found 3 solutions in 0.107 seconds.
+
+?s             ?p
+
+Sarah Parker   Sarah
+Robert Smith   Bobby
+Matt Parker    Matthew
+

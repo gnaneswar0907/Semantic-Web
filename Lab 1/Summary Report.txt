@@ -1,0 +1,16 @@
+Lab 1 - Summary Report 
+
+Description - To create an in-memory and persisted models with Jena and to output the created models in the following formats - RDF/XML, N-Triple, N3
+
+-> Jena librarires was included in the build path of the project.
+
+Steps:
+
+1. Import the zip file Lab1 as Java project in Eclipse IDE.
+2. All necessary files required for the project (gxg170000_FOAFFriends.rdf) is included in the project folder.
+3. "MyDatabases" folder is also included in the folder path. NOTE: Do not delete the folder
+4. Run the file Lab1p4.java and the program will generate three files of the model in the following formats - RDF/XML, N-Triple, N3
+
+Output:
+
+1. Following files will be created in the same project folder: Lab1p4_gxg170000.n3, Lab1p4_gxg170000.ntp, Lab1p4_gxg170000.xml
