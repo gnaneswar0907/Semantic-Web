@@ -1,0 +1,12 @@
+Lab 4 - Summary Report 
+
+Description - Be able to create ontology and instance data using Protégé and OWL
+
+Steps:
+
+1. Protégé was installed and used to create new ontology file with IRI
+2. Load foaf.rdf file and performed required tasks.
+
+Output:
+
+1. Following files will be created in the same project folder: lab4.owl and catalog-v001
